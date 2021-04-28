@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(57, 168, 163);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pw-container {
+    background-color: rgb(35, 110, 107);
+    width: 30%;
+    padding: 1rem;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.pw {
+    background-color: rgb(18, 56, 54);
+    height: 60px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.pw .password {
+    margin-left: 10px;
+}
+
+.pw button {
+    background-color: rgb(57, 168, 163) ;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 6px;
+    opacity: 0;
+    transform: translate(0, 40%);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.pw img {
+    width: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.pw-body {
+    margin-top: 25px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.form-control .length {
+    height: 1.2rem;
+    width: 3rem;
+}
+
+.generate {
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(18, 56, 54);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.generate:hover {
+    transform: scale(.98);
+}
+
+
